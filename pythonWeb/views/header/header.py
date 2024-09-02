@@ -8,7 +8,7 @@ def header() -> rx.Component:
             rx.avatar(fallback="BR", size="7", radius="full", color_scheme="yellow", variant="solid", high_contrast=False),
             rx.vstack(
                 rx.text("BRAIS MOURE", size="7", font_weight="700"),
-                rx.text("@moredev", color="black", size="6", margin_top="0px"),
+                rx.text("@moredev", size="6", margin_top="0px"),
             rx.hstack(
                     link_icon("twitter", "https://twitter.com"),
                     link_icon("twitch", "https://twitch.com"),

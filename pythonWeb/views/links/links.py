@@ -12,11 +12,11 @@ def links() -> rx.Component:
         link_button("instagram","Instagram","Pellentesque sit amet porttitor eget. Sit amet purus gravida quis blandit turpis.", "https://instagram.com/mourdev"),
         link_button("chrome","Discord", "At quis risus sed vulputate odio. Nulla at volutpat diam ut venenatis.","https://discord.gg/mourdev"),
 
-        title("Códigos"),
+        title("Recursos y Más"),
         link_button("codesandbox","Codesandbox", "Mi canal de esto", "https://twitch.tv/mourdev" ),
         link_button("codepen","Codepen", "Libero volutpat sed cras ornare arcu dui. Sed viverra ipsum nunc aliquet bibendum.","https://youtube.com/mourdev"),
         link_button("trello","Trello", "Consequat interdum varius sit amet mattis vulputate. Nunc aliquet bibendum enim facilisis ","https://twitch.tv/mourdev"),
-        link_button("linkedin","Linkedin","Pellentesque sit amet porttitor eget. Sit amet purus gravida quis blandit turpis.", "https://instagram.com/mourdev"),
+        link_button("linkedin","Linkedin","Pellentesque sit amet porttitor eget.", "https://instagram.com/mourdev"),
         link_button("facebook","Fcebook", "At quis risus sed vulputate odio. Nulla at volutpat diam ut venenatis.","https://discord.gg/mourdev"),
         spacing=Spacer.DEFAULT.value
     )
