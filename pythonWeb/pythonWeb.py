@@ -3,29 +3,29 @@ from pythonWeb.componentes.navbar import navbar
 from pythonWeb.componentes.footer import footer
 from pythonWeb.views.header.header import header
 from pythonWeb.views.links.links import links
+import pythonWeb.styles.styles as styles
 
 class State(rx.State):
     pass
 
 def index() -> rx.Component:
-    return rx.vstack(
-       # rx.box(
-            navbar(),
-            header(),
-            rx.text('Soy ingeniero de software y actualmente trabajo como freelance full-stack developer iOS y Android. Además, creo contenido formativo sobre programación en redes. Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!'),
-            links(),
-            footer(),
-            border="1px solid red",
-            display="flex",
-            flex_direction="column",
-            align_items="center",
-            gap="20px",
-
-      #  ),
-        #border="1px solid green"
+    return rx.box(
+                navbar(),
+        rx.center(
+            rx.vstack(
+                header(),
+                links(),
+                align="center",
+                padding=styles.Spacer.LARGE,
+                max_width=styles.MAX_WIDTH,
+                width="100%",
+            ),
+        ),
+        footer(),
     )
 
-
-app = rx.App()
+app = rx.App(
+    style = styles.BASE_STYLE
+)
 app.add_page(index)
 app._compile()
