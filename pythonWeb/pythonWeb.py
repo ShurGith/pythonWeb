@@ -1,4 +1,5 @@
 import reflex as rx
+import pythonWeb.constants as const
 from pythonWeb.componentes.navbar import navbar
 from pythonWeb.componentes.footer import footer
 from pythonWeb.views.header.header import header
@@ -25,7 +26,9 @@ def index() -> rx.Component:
     )
 
 app = rx.App(
-    style = styles.BASE_STYLE
+    stylesheets=styles.STYLEFONTS,
+    style=styles.BASE_STYLE
 )
-app.add_page(index)
+app.add_page(index,
+             title="MoreDev | Te enseño programación y desarrollo de software"),
 app._compile()

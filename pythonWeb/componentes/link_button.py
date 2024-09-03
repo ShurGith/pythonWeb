@@ -10,11 +10,11 @@ def link_button(icono: str, title: str, body: str, url: str) -> rx.Component:
                   rx.text(title, style=styles.button_tittle_style),
                   rx.text(body, style=styles.button_body_style),
                 ),
-                align="center",
+                align_items="center",
                 gap=styles.Spacer.EXTRA_LARGE
             ),
-            href=url,
-            is_external = True,
         ),
+        href=url,
+        is_external = True,
         width="100%",
     )

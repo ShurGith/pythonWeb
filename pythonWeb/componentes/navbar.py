@@ -1,12 +1,22 @@
 import reflex as rx
 from pythonWeb.styles.styles import Size as Size
+from pythonWeb.styles.colors import Color as Color
+from pythonWeb.styles.fonts import Font, FontWeight
+
 
 def navbar() -> rx.Component:
     return rx.hstack(
-        rx.avatar(src="/logo.svg", fallback="JJ", size="4"),
-        rx.text(
-            "mouredev",
-            height="40px", color="#ffffff", font_size="1.5em", font_weight="700",cursor="pointer"
+        rx.hstack(
+            rx.image(src="/logo.svg"),
+            rx.flex(
+                rx.text("moure", color=Color.PRIMARY),
+                rx.text("dev",  color=Color.SECONDARY),
+                font_family=Font.LOGO,
+                font_size=Size.LARGE,
+                font_weight=FontWeight.LIGHT
+            ),
+            justify="center",
+            align_items="center",
         ),
         position="sticky",
         top="0px",
