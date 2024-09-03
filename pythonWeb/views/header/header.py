@@ -46,7 +46,7 @@ def header() -> rx.Component:
             #flex_direction=["column", "column", "row", "row", "row"],
 
         ),
-        rx.text('Soy Mecánico de software desde hace mas de 12 años. Actualmente trabajo como freelance full-stack developer iOS y Android. Además, creo contenido formativo sobre programación en redes. Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!'),
+        rx.text('Soy Mecánico de motores desde hace mas de 12 años. Actualmente trabajo como freelance full-stack developer iOS y Android. Además, creo contenido formativo sobre programación en redes. Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!'),
         align="start",
         padding="40px",
         max_width="90%"
